@@ -1,0 +1,102 @@
+@import '@/css/fontawesome-5.14.0.min.css';
+@import '@/css/bootstrap.min.css';
+@import '@/css/magnific-popup.min.css';
+@import '@/css/nice-select.min.css';
+@import '@/css/jquery.animatedheadline.css';
+@import '@/css/animate.min.css';
+@import '@/css/slick.min.css';
+@import '@/css/style.css';
+@import '@/css/flaticon.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* .navigation li ul,
+.navigation li ul li.dropdown ul {
+  display: block !important;
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: height 0.3s linear, padding-top 0.3s linear;
+}
+.navigation li:hover ul,
+.navigation li ul li.dropdown:hover ul {
+  height: 100px;
+} */
+.floating_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fc653c;
+  color: #E7ECEF;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 10;
+}
+.btVisible{
+  display: none;
+}
+.button_for_change_languaje {
+  background-color: #ffffff00;
+  margin-right: 20px;
+}
+
+.color-icon {
+  color: white !important;
+  /* text-shadow: 0.5px 0.5px 0.5px #00000054; */
+}
+
+.navigation li.dropdown>ul {
+  /* display: block !important;
+  max-height: 0;
+  transition-delay: 4s all;
+  transition: max-height 0.35s ease-out, opacity 0.35s; */
+  /* overflow: hidden; */
+  /* opacity: 0; */
+}
+
+.navigation li.dropdown:hover>ul {
+  display: block;
+  /* max-height: 500px;
+  transition: max-height 0.65s ease-in, opacity 1.65s;
+  opacity: 1; */
+}
+
+.dark-version .dark-logo {
+  display: none;
+}
+
+.dark-version .light-logo {
+  display: block;
+}
+
+.light-logo {
+  display: none;
+}
+
+/* Slick slider */
+.slick-dots {
+  display: flex !important;
+}
+
+.feedback-active .slick-slide {
+  padding: 0 15px;
+}
+
+.page-item .page-link {
+  border-radius: 50% !important;
+}
+
+.product-details-images .nav-link {
+  padding: 0;
+}
