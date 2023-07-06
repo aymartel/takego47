@@ -36,7 +36,7 @@ const ChangeLanguaje = () => {
             locale={language}
             passHref
         >
-            <button className="button_for_change_languaje">
+            <button className="button_for_change_languaje ms-3">
 
 
                 <Image 

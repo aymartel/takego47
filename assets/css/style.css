@@ -8171,3 +8171,16 @@ h4.comment-title {
 .logotext-white {
   filter: brightness(10.5)
 }
+
+.backgroundmap{
+  height: 70vh;
+  background-image:  url(../images/take/header-back-01.svg); 
+  background-size: cover;
+  width: 100%;
+}
+.backgroundcontact{
+  /* background-image:  url(../images/take/contactback-01.svg); 
+  background-size: cover;
+  width: 100%;
+  color: white; */
+}
