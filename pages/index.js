@@ -6,7 +6,7 @@ import ContactArea from "@/components/main-components/contact-area";
 import WhatWeOfferTwo from "@/components/main-components/what-we-offer-two";
 import FloatingButton from "@/components/secondaries-components/float-button";
 import WhatWeOfferTwoLeft from "@/components/main-components/what-we-offer-two-left";
-import logo from "@/images/take/logo.svg";
+import logo from "@/images/take/Logo.svg";
 import misssion from "@/images/take/misssion-01.svg";
 import vission from "@/images/take/vission-01.svg";
 import objective from "@/images/take/objective-01.svg";
