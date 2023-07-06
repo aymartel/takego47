@@ -30,7 +30,7 @@ const Index = () => {
       <div id="about" >
         <WhatWeOfferTwoLeft title={t("take_mision")} text={t("take_misiontext")} image={misssion} />
         <WhatWeOfferTwo title={t("take_vision")} text={t("take_visiontext")} image={vission} />
-        <WhatWeOfferTwoLeft title={t("take_objective")} text={t("")} image={objective} />
+        <WhatWeOfferTwoLeft title={t("take_objective")} text={""} image={objective} />
       </div>
       <div id="service" >
 
