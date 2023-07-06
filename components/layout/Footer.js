@@ -1,8 +1,9 @@
 import { useTranslations } from "next-intl";
+import logotext from "@/images/take/logotext.svg";
+import Image from "next/image";
 
 const Footer = ({ footer }) => {
   const t = useTranslations('Messages');
-
   return <footer className="main-footer pt-80">
 
     <div className="footer-bottom mt-30 pt-25 pb-10">
@@ -10,14 +11,14 @@ const Footer = ({ footer }) => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="copyright-text text-center text-lg-start">
-              <p>© Copyright {new Date().getFullYear()} Andy Martel. {t("footer_copyright")}</p>
+              <p>© Copyright {new Date().getFullYear()} Take & Go. {t("footer_copyright")}</p>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="footer-bottom-menu mb-10 text-center text-lg-end">
               <ul>
                 <li>
-                  <a href="#">Take & Go</a>
+                <Image id="logotext" className="profile-img" src={logotext} alt="..." />
                 </li>
                 
               </ul>

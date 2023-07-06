@@ -6,7 +6,7 @@ const WhatWeOfferBackground = ({background,id,title, text, image}) => {
     <div className="container">
       <div className="row large-gap align-items-center">
         <div className="col-lg-6">
-          <div className="what-we-offer-image rmb-65 wow fadeInRight delay-0-1s">
+          <div className="what-we-offer-image rmb-65 wow fadeInRight delay-0-1s mt-4">
             <Image  
               src={image}
               alt="What We Offer"
