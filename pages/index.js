@@ -14,25 +14,33 @@ import service from "@/images/take/service-01.svg";
 import team from "@/images/take/team-01.svg";
 import work from "@/images/take/work-01.svg";
 import payment from "@/images/take/payment-01.svg";
+import map from "@/images/take/Map.png";
 const Index = () => {
   return (
 
     <Layout className="home-one">
+
       <HeadTitle text={t("title_home")} />
       <FloatingButton />
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <WhatWeOfferTwo title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={logo} />
-      <WhatWeOfferTwoLeft title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={misssion} />
-      <WhatWeOfferTwo title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={vission} />
-      <WhatWeOfferTwoLeft title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={objective} />
-      <WhatWeOfferTwo title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={service} />
-      <WhatWeOfferTwoLeft title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={team} />
-      <WhatWeOfferTwo title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={work} />
-      <WhatWeOfferTwoLeft title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={payment} />
-      <WhatWeOfferTwo title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={work} />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <WhatWeOfferTwo id="home" title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={logo} />
+      <div id="about" >
+        <WhatWeOfferTwoLeft title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={misssion} />
+        <WhatWeOfferTwo title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={vission} />
+        <WhatWeOfferTwoLeft title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={objective} />
+      </div>
+      <div id="service" >
+
+        <WhatWeOfferTwo id="service" title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={service} />
+      <WhatWeOfferTwoLeft title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={work} />
+      <WhatWeOfferTwo title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={payment} />
+      </div>
+      <WhatWeOfferTwoLeft id="team" title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={team} />
+      <WhatWeOfferTwo id="contact" title={t("whatweoffertwo_subtitle")} text={t("whatweoffertwo_text")} image={map} />
     </Layout>
   );
 };

@@ -7963,10 +7963,14 @@ h4.comment-title {
 /* Footer Bottom */
 .footer-bottom {
   position: relative;
-  border-top: 1px solid rgba(0, 102, 255, 0.1); }
+  border-top: 1px solid rgba(0, 102, 255, 0.1); 
+  background-color: #EBA900;
+
+}
+
   .footer-bottom .copyright-text {
     font-size: 18px;
-    color: #422B7C; }
+    color: black; }
   .footer-bottom .scroll-top {
     position: absolute;
     top: -24px;
@@ -7987,7 +7991,7 @@ h4.comment-title {
   .footer-bottom-menu ul li {
     margin: 0 15px 5px; }
     .footer-bottom-menu ul li a {
-      color: #422B7C; }
+      color: black; }
       .footer-bottom-menu ul li a:hover {
         text-decoration: underline; }
 
@@ -7999,7 +8003,7 @@ h4.comment-title {
 
 .main-footer.footer-two .footer-bottom {
   border-top: none;
-  background: #e9e9ec; }
+  background: #EBA900; }
 
 /*******************************************************/
 /****************** 28. Dark Version *******************/
@@ -8138,7 +8142,7 @@ h4.comment-title {
   .dark-version.home-one .form-control {
     background: transparent; }
   .dark-version.home-one .main-footer {
-    background: #1e1e22; }
+    background: #EBA900; }
     
     @media only screen and (min-width: 992px) {
       .main-header.header-two .main-menu .navigation > li > a,
@@ -8153,6 +8157,7 @@ h4.comment-title {
 .navtop {
   position: fixed !important;
   background-color: rgba(255, 255, 255, 0.267);
+  color: black;
 }
 
 .navunder {

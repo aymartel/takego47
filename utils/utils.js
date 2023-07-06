@@ -11,7 +11,7 @@ export const stickyNav = () => {
   const navlink4 = document.getElementById("nav-link4");
   const navlink5 = document.getElementById("nav-link5");
  console.log(offset)
-      if (offset > 10) {
+      if (offset > 129) {
         floatButton.classList.remove("btVisible");
         nav.classList.remove("navtop");
         nav.classList.add("navunder");
@@ -20,7 +20,6 @@ export const stickyNav = () => {
         navlink2.classList.add("text-white");
         navlink3.classList.add("text-white");
         navlink4.classList.add("text-white");
-        navlink5.classList.add("text-white");
       } else {
         logotext.classList.remove("logotext-white");
         floatButton.classList.add("btVisible");
@@ -30,7 +29,6 @@ export const stickyNav = () => {
         navlink2.classList.remove("text-white");
         navlink3.classList.remove("text-white");
         navlink4.classList.remove("text-white");
-        navlink5.classList.remove("text-white");
       }
     
   }

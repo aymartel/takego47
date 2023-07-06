@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const WhatWeOfferTwo = ({title, text, image}) => {
+const WhatWeOfferTwo = ({id,title, text, image}) => {
   return (
-    <section className="what-we-offer-two mb-130 rel z-1" >
+    <section id={id} className="what-we-offer-two mb-130 rel z-1" >
     <div className="container">
       <div className="row large-gap align-items-center">
         <div className="col-lg-6">

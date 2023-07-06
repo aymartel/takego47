@@ -12,6 +12,7 @@ import { animation, stickyNav } from "../../utils/utils";
 import CallToAction from "../secondaries-components/CallToAction";
 import Head from "next/head";
 import { useTranslations } from "next-intl";
+import NavbarOne from "./Navbar";
 
 const Layout = ({ children, header, className, footer, noHeader }) => {
   const t = useTranslations('Messages');
@@ -44,7 +45,7 @@ const Layout = ({ children, header, className, footer, noHeader }) => {
       <VideoPopup />
       {/* <Image  View /> */}
       <div className="page-wrapper">
-        {!noHeader && <Header header={header} />}
+        {!noHeader && <NavbarOne/>}
         <SideBar  tsendmessage={t("sendmessage")}
               tname={t("name")}
               temailaddress={t("emailaddress")}

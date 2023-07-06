@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import { useTranslations } from "next-intl";
 
-const WhatWeOfferTwoLeft = ({title, text, image}) => {
+const WhatWeOfferTwoLeft = ({id, title, text, image}) => {
   return (
-    <section className="what-we-offer-two mb-130 rel z-1" >
+    <section id={id} className="what-we-offer-two mb-130 rel z-1" >
     <div className="container">
       <div className="row large-gap align-items-center flex-sm-row-reverse">
         <div className="col-lg-6">
