@@ -2,21 +2,39 @@ export const navigationHover = () => {};
 // Sticky nav
 export const stickyNav = () => {
   let offset = window.scrollY;
-  const sticky = document.querySelectorAll(".main-header");
   const floatButton = document.getElementById("floatButton");
-  for (let i = 0; i < sticky.length; i++) {
-    const stick = sticky[i];
-    if (stick) {
+  const nav = document.getElementById("navbar");
+  const logotext = document.getElementById("logotext");
+  const navlink1 = document.getElementById("nav-link1");
+  const navlink2 = document.getElementById("nav-link2");
+  const navlink3 = document.getElementById("nav-link3");
+  const navlink4 = document.getElementById("nav-link4");
+  const navlink5 = document.getElementById("nav-link5");
+ console.log(offset)
       if (offset > 10) {
         floatButton.classList.remove("btVisible");
-        stick.classList.add("fixed-header");
+        nav.classList.remove("navtop");
+        nav.classList.add("navunder");
+        logotext.classList.add("logotext-white");
+        navlink1.classList.add("text-white");
+        navlink2.classList.add("text-white");
+        navlink3.classList.add("text-white");
+        navlink4.classList.add("text-white");
+        navlink5.classList.add("text-white");
       } else {
+        logotext.classList.remove("logotext-white");
         floatButton.classList.add("btVisible");
-        stick.classList.remove("fixed-header");
+        nav.classList.remove("navunder");
+        nav.classList.add("navtop");
+        navlink1.classList.remove("text-white");
+        navlink2.classList.remove("text-white");
+        navlink3.classList.remove("text-white");
+        navlink4.classList.remove("text-white");
+        navlink5.classList.remove("text-white");
       }
-    }
+    
   }
-};
+;
 
 // Animation with wowjs
 export const animation = () => {

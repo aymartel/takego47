@@ -5,10 +5,10 @@ import MobileMenu from "./MobileMenu";
 import ChangeLanguajeText from "../secondaries-components/change-languaje-text";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/router";
-import logo from "../../assets/images/logos/logo1.svg";
+import logo from "../../assets/images/take/logotext.svg";
 import Image from "next/image";
 import ChangeLanguaje from "../secondaries-components/change-languaje";
-
+import logotext from "@/images/take/logotext.svg";
 
 const Header = ({ header }) => {
   
@@ -21,120 +21,36 @@ export default Header;
 
 
 const Header1 = () => {
-  const router = useRouter();
   return (
-    <header className="main-header header-two backHeader">
-      {/*Header-Upper*/}
-      <div className="header-upper">
-        <div className="container clearfix">
-          <div className="header-inner rel d-flex align-items-center">
-            <div className="logo-outer">
-              <div className="logo">
-                <Link href="#">
-                  <a>
-                    <Image
-                      src={logo}
-                      alt="Logo"
-                      title="Logo"
-                      width={250}
-                      height={60}
-                    />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="nav-outer clearfix">
-              <MobileMenu logo={logo} />
-              {/* Main Menu */}
-              <nav className="main-menu d-none d-lg-block navbar-expand-lg">
-                <div className="navbar-header">
-                  <div className="mobile-logo my-15">
-                    <Link href="#">
-                      <a>
-                        <Image
-                          src={logo}
-                          alt="Logo"
-                          title="Logo"
-                          width={250}
-                          height={66}
-                        />
-                      </a>
-                    </Link>
-                  </div>
-                  {/* Toggle Button */}
-                  <button
-                    type="button"
-                    className="navbar-toggle"
-                    data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse"
-                  >
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                  </button>
+    <nav id="navbar" className="navbar navbar-expand-lg navbar-light fixed-top py-3">
+            <div className="container px-5">
+                <a className="nav-link" href="#home"> <Image id="logotext" className="profile-img" src={logotext} alt="..." /></a>
+                <button id="btnclick" className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        className="navbar-toggler-icon"></span></button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder ">
+                        <li className="nav-item"><a id="nav-link1" className="nav-link" href="#mission">Misión</a></li>
+                        <li className="nav-item"><a id="nav-link2" className="nav-link" href="#service">Servicio</a></li>
+                        <li className="nav-item"><a id="nav-link3" className="nav-link" href="#work">Nuestro Trabajo</a></li>
+                        <li className="nav-item"><a id="nav-link4" className="nav-link" href="#payment">Método de Pagos</a></li>
+                        <li className="nav-item"><a id="nav-link5" className="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
                 </div>
-                <div className="navbar-collapse collapse clearfix">
-                  <Menu />
-                </div>
-              </nav>
-              {/* Main Menu End*/}
-            </div>
-          
-            {/* Menu Button */}
-            <div className="menu-btns">
-              <div className="d-none d-sm-none d-md-block">
-
+                <div className="collapse navbar-collapse" id="navbaelanguaje">
                 <ChangeLanguaje />
-              </div>
-              <Link href="">
-                <a className="theme-btn style-three" onClick={() => sideBarToggle()}>
+                <Link href="">
+                <a id="btn-quote"className="theme-btn style-three bg-white" onClick={() => sideBarToggle()}>
                   {t("get_quote")}<i className="fas fa-angle-double-right" />
                 </a>
               </Link>
-              {/* menu sidbar */}
-              <div className="menu-sidebar  fs-3 	d-block d-sm-block d-xl-none">
-                <button onClick={() => sideBarToggle()}>
-                  <i className="fas fa-headset icon-callcenter  color-icon" />
-                </button>
-              </div>
-              {/* <div className="menu-sidebar d-none d-lg-block">
-                <button onClick={() => sideBarToggle()}>
-                  <span className="icon-bar" />
-                  <span className="icon-bar" />
-                  <span className="icon-bar" />
-                </button>
-              </div> */}
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      {/*End Header Upper*/}
-    </header>
+        </nav>
+
+   
   );
 };
 
 
-const Menu = () => {
-  return (
-    <ul className="navigation clearfix">
-      <li>
-        <Link href="#home">{t("home")}</Link>
-      </li>
-      <li>
-        <Link href="#about_us">{t("about_us")}</Link>
-      </li>
-      <li>
-        <Link href="#services">{t("services")}</Link>
-      </li>
-      <li>
-        <Link href="#faqs">{t("faqs")}</Link>
-      </li>
-
-      <li>
-        <Link href="#contact">{t("contact")}</Link>
-      </li>
-
-
-    </ul>
-  );
-};

@@ -1,10 +1,13 @@
+import Link from "next/link";
 import Image from "next/image";
 
-const WhatWeOfferTwo = ({title, text, image}) => {
+import { useTranslations } from "next-intl";
+
+const WhatWeOfferTwoLeft = ({title, text, image}) => {
   return (
     <section className="what-we-offer-two mb-130 rel z-1" >
     <div className="container">
-      <div className="row large-gap align-items-center">
+      <div className="row large-gap align-items-center flex-sm-row-reverse">
         <div className="col-lg-6">
           <div className="what-we-offer-image rmb-65 wow fadeInRight delay-0-1s">
             <Image  
@@ -29,4 +32,4 @@ const WhatWeOfferTwo = ({title, text, image}) => {
   </section>
   );
 };
-export default WhatWeOfferTwo;
+export default WhatWeOfferTwoLeft;
