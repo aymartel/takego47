@@ -28,8 +28,8 @@ const MobileMenu = ({ logo }) => {
           <div className="mobile-logo my-15">
             <Link href="#">
               <a>
-                <Image  
-                  src={router.locale!=='ru'?logoen:logoru}
+                <Image
+                  src={router.locale !== 'ru' ? logoen : logoru}
 
                   alt="Logo"
                   title="Logo"
@@ -38,6 +38,7 @@ const MobileMenu = ({ logo }) => {
                 />
               </a>
             </Link>
+            
           </div>
           {/* Toggle Button */}
           <div className=" 	d-md-none d-lg-block 	d-lg-none d-xl-block 	d-xl-none">
@@ -56,24 +57,21 @@ const MobileMenu = ({ logo }) => {
         </div>
         <Accordion.Collapse eventKey="nav" className="navbar-collapse clearfix">
           <ul className="navigation clearfix">
-          <li>
-              <Link href="#home">{t("home")}</Link>
-            </li>
+            
             <li>
               <Link href="#about_us">{t("about_us")}</Link>
             </li>
             <li>
-              <Link href="#services">{t("services")}</Link>
+              <Link href="#services">{t("take_service")}</Link>
             </li>
             <li>
-              <Link href="#faqs">{t("faqs")}</Link>
+              <Link href="#faqs">{t("take_payment")}</Link>
             </li>
-            <li>
-              <Link href="#contact">{t("contact")}</Link>
-            </li>
+          
           </ul>
         </Accordion.Collapse>
       </Accordion>
+      
     </nav>
   );
 };

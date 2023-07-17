@@ -23,8 +23,6 @@ const Index = () => {
 
       <HeadTitle text={t("title_home")} />
       <FloatingButton />
-     
-   
 
       <WhatWeOfferBackground  background="map pt-4" id="home" title={t("take_slogan")} text={""} image={logo} />
       <div id="about" >

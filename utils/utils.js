@@ -8,27 +8,25 @@ export const stickyNav = () => {
   const navlink1 = document.getElementById("nav-link1");
   const navlink2 = document.getElementById("nav-link2");
   const navlink3 = document.getElementById("nav-link3");
-  const navlink4 = document.getElementById("nav-link4");
-  const navlink5 = document.getElementById("nav-link5");
- console.log(offset)
       if (offset > 129) {
         floatButton.classList.remove("btVisible");
         nav.classList.remove("navtop");
+        nav.classList.remove("bg-light");
+        
         nav.classList.add("navunder");
         logotext.classList.add("logotext-white");
         navlink1.classList.add("text-white");
         navlink2.classList.add("text-white");
         navlink3.classList.add("text-white");
-        navlink4.classList.add("text-white");
       } else {
         logotext.classList.remove("logotext-white");
         floatButton.classList.add("btVisible");
         nav.classList.remove("navunder");
+        
         nav.classList.add("navtop");
         navlink1.classList.remove("text-white");
         navlink2.classList.remove("text-white");
         navlink3.classList.remove("text-white");
-        navlink4.classList.remove("text-white");
       }
     
   }

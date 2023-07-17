@@ -8156,7 +8156,7 @@ h4.comment-title {
 
 .navtop {
   position: fixed !important;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5)!important;
   color: black;
 }
 
@@ -8173,7 +8173,7 @@ h4.comment-title {
 }
 
 .backgroundmap{
-  height: 70vh;
+  height: 100%;
   background-image:  url(../images/take/header-back-01.svg); 
   background-size: cover;
   width: 100%;
