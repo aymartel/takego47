@@ -608,8 +608,7 @@ a.theme-btn {
   z-index: 9999999;
   background-color: #696e7b;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url(../images/preloader.gif); }
+  background-position: center center;}
 
 /* Pagination */
 .pagination {
@@ -1025,8 +1024,7 @@ a.theme-btn {
       background: black; }
   .home-one .slick-arrow {
     border-radius: 50%; }
-  .home-one .preloader {
-    background-image: url(../images/preloader2.gif); }
+  
   .home-one .text-center .sub-title:after, .home-one .text-center .sub-title:before {
     display: block; }
 
@@ -3565,18 +3563,6 @@ background: linear-gradient(180deg, rgba(23,23,26,1) 0%, rgba(23,23,26,0) 92%);
 /*******************************************************/
 /******************** 07. Hero Area ********************/
 /*******************************************************/
-.backgvideo1{
-  background-image: url('../images/slider/business.webp');
-}
-.backgvideo2{
-  background-image: url('../images/slider/design.jpg');
-}
-.backgvideo3{
-  background-image: url('../images/slider/slide1.jpg');
-}
-.bgCta2{
-  background-image: url('../images/background/cta-bg.jpg');
-}
 
 .hero-content {
   z-index: 2;
@@ -5110,8 +5096,7 @@ background: linear-gradient(180deg, rgba(23,23,26,1) 0%, rgba(23,23,26,0) 92%);
     opacity: 0;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
-    transition: 0.5s;
-    background: url("../images/services/service-bg.png") no-repeat center/cover; }
+    transition: 0.5s; }
   .service-item:hover {
     background: #EBA900;
     -webkit-box-shadow: 10px 0 60px rgba(0, 102, 254, 0.25);
@@ -5126,8 +5111,6 @@ background: linear-gradient(180deg, rgba(23,23,26,1) 0%, rgba(23,23,26,0) 92%);
       margin-bottom: 0; }
       .service-item.style-two h5 a {
         text-decoration: none; }
-    .service-item.style-two:after {
-      background-image: url("../images/services/service-bg-two.png"); }
     .service-item.style-two:hover {
       -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
@@ -6446,7 +6429,6 @@ background: linear-gradient(180deg, rgba(23,23,26,1) 0%, rgba(23,23,26,0) 92%);
   background-image: url(../images/background/cta-two.png);
 }
 .cta-inner {
-  background-image: url(../images/background/cta-bg.jpg);
   margin-top: -110px;
   z-index: 1;
   position: relative;
@@ -7946,8 +7928,7 @@ h4.comment-title {
     background: #EBA900; }
 
 .widget_newsletter {
-  padding: 35px 40px 45px;
-  background: url(../images/footer/newslette-widget-bg.png) no-repeat center/cover; }
+  padding: 35px 40px 45px;}
   @media only screen and (max-width: 375px) {
     .widget_newsletter {
       padding-left: 25px;

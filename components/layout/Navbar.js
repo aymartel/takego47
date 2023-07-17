@@ -12,7 +12,6 @@ function NavbarOne() {
     <Navbar collapseOnSelect expand="lg" id="navbar" className="bg-body-tertiary navtop fixed-top py-3 ">
       <Container>
         <Navbar.Brand href="#home"> <Image id="logotext" className="profile-img" src={logotext} alt="..." /></Navbar.Brand>
-        <ChangeLanguaje />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

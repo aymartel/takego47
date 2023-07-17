@@ -1,8 +1,8 @@
 import nodemailer from 'nodemailer';
 
-const emailUser="aymartel@yandex.ru"
-const emailPass="Mart@*2022Y"
-const emailDestination="mcboosterbusiness@gmail.com"
+const emailUser="example@gmail.ru"
+const emailPass="password123"
+const emailDestination="example@gmail.ru"
 
 export default async (req, res) => {
   if (req.method === 'POST') {

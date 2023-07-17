@@ -1,8 +1,6 @@
 import Layout from "@/components/layout/Layout";
-import Hero1 from "@/components/secondaries-components/Hero1";
 import { t } from "utils/utils";
 import HeadTitle from "@/components/layout/HeadTitle";
-import ContactArea from "@/components/main-components/contact-area";
 import WhatWeOfferTwo from "@/components/main-components/what-we-offer-two";
 import FloatingButton from "@/components/secondaries-components/float-button";
 import WhatWeOfferTwoLeft from "@/components/main-components/what-we-offer-two-left";
@@ -16,6 +14,7 @@ import work from "@/images/take/work-01.svg";
 import payment from "@/images/take/payment-01.svg";
 import map from "@/images/take/Map.png";
 import WhatWeOfferBackground from "@/components/main-components/what-we-offer-background";
+import WhatWeOfferMap from "@/components/main-components/what-we-offer-map";
 const Index = () => {
   return (
 
@@ -24,7 +23,7 @@ const Index = () => {
       <HeadTitle text={t("title_home")} />
       <FloatingButton />
 
-      <WhatWeOfferBackground  background="map pt-4" id="home" title={t("take_slogan")} text={""} image={logo} />
+      <WhatWeOfferBackground background="map pt-4" id="home" title={t("take_slogan")} text={""} image={logo} />
       <div id="about" >
         <WhatWeOfferTwoLeft title={t("take_mision")} text={t("take_misiontext")} image={misssion} />
         <WhatWeOfferTwo title={t("take_vision")} text={t("take_visiontext")} image={vission} />
@@ -33,11 +32,11 @@ const Index = () => {
       <div id="service" >
 
         <WhatWeOfferTwo id="service" title={t("take_service")} text={t("take_servicetext")} image={service} />
-      <WhatWeOfferTwoLeft title={t("take_work")} text={t("take_worktext")} image={work} />
-      <WhatWeOfferTwo title={t("take_payment")} text={t("take_paymenttext")} image={payment} />
+        <WhatWeOfferTwoLeft title={t("take_work")} text={t("take_worktext")} image={work} />
+        <WhatWeOfferTwo title={t("take_payment")} text={t("take_paymenttext")} image={payment} />
       </div>
       <WhatWeOfferTwoLeft id="team" title={t("take_team")} text={t("take_teamtext")} image={team} />
-      <WhatWeOfferBackground background="contact" id="contact" title={t("contact")} text={t("take_address1")} image={map} />
+      <WhatWeOfferMap  id="contact" title={t("contact")} text={t("take_address1")}/>
     </Layout>
   );
 };
