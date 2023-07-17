@@ -35,7 +35,7 @@ const Index = () => {
         <WhatWeOfferTwo title={t("take_payment")} text={t("take_paymenttext")} image={payment} />
       </div>
       <WhatWeOfferTwoLeft id="team" title={t("take_team")} text={t("take_teamtext")} image={team} />
-      <WhatWeOfferMap  id="contact" title={t("contact")} text={t("take_address1")}/>
+      <WhatWeOfferMap background="contact" id="contact" title={t("contact")} adr1={t("take_address1")} adr2={t("take_address2")} adr3={t("take_address3")}/>
     </Layout>
   );
 };

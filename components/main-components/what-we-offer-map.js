@@ -1,7 +1,7 @@
 
-const WhatWeOfferMap= ({background,id,title, text}) => {
+const WhatWeOfferMap= ({background,id,title, adr1,adr2,adr3}) => {
   return (
-    <section id={id} className={`what-we-offer-two mb-130 rel z-1 background${background}`} >
+    <section id={id} className={`what-we-offer-two rel z-1 background${background}`} >
     <div className="container">
       <div className="row large-gap align-items-center">
         <div className="col-lg-6">
@@ -13,10 +13,15 @@ const WhatWeOfferMap= ({background,id,title, text}) => {
           <div className="what-we-offer-content wow fadeInLeft delay-0-1s">
             <div className="section-title mb-25">
               
-              <h2>{title}</h2>
+              <h2 className="text-white">{title}</h2>
             </div>
+            <ul>
+              <li><i className="fas fa-map-marker-check " /> {adr1} </li>
+              <li><i className="fas fa-map-marker-check " /> {adr2} </li>
+              <li><i className="fas fa-map-marker-check " />  {adr3} </li>
+            </ul>
             <p>
-            {text}
+            
             </p>
           </div>
         </div>

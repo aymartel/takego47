@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Footer = ({ footer }) => {
   const t = useTranslations('Messages');
-  return <footer className="main-footer pt-80">
+  return <footer className="main-footer ">
 
-    <div className="footer-bottom mt-30 pt-25 pb-10">
+    <div className="footer-bottom pt-25 pb-10">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
