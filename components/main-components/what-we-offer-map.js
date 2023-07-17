@@ -18,7 +18,7 @@ const WhatWeOfferMap= ({background,id,title, adr1,adr2,adr3}) => {
             <ul>
               <li><i className="fas fa-map-marker-check " /> {adr1} </li>
               <li><i className="fas fa-map-marker-check " /> {adr2} </li>
-              <li><i className="fas fa-map-marker-check " />  {adr3} </li>
+              <li><i className="fas fa-map-marker-check " /> {adr3} </li>
             </ul>
             <p>
             
