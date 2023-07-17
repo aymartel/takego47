@@ -12,7 +12,6 @@ import service from "@/images/take/service-01.svg";
 import team from "@/images/take/team-01.svg";
 import work from "@/images/take/work-01.svg";
 import payment from "@/images/take/payment-01.svg";
-import map from "@/images/take/Map.png";
 import WhatWeOfferBackground from "@/components/main-components/what-we-offer-background";
 import WhatWeOfferMap from "@/components/main-components/what-we-offer-map";
 const Index = () => {
