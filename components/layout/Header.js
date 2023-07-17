@@ -44,11 +44,7 @@ const Header1 = () => {
                   {t("get_quote")}<i className="fas fa-angle-double-right" />
                 </a>
               </Link>
-              <div className="menu-sidebar  fs-3 	d-block d-sm-block d-xl-none">
-                <button onClick={() => sideBarToggle()}>
-                  <i className="fas fa-headset icon-callcenter  color-icon" />
-                </button>
-              </div>
+              
                 </div>
             </div>
         </nav>

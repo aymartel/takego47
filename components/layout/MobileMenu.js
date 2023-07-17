@@ -65,7 +65,7 @@ const MobileMenu = ({ logo }) => {
               <Link href="#services">{t("take_service")}</Link>
             </li>
             <li>
-              <Link href="#faqs">{t("take_payment")}</Link>
+              <Link href="#payment">{t("take_payment")}</Link>
             </li>
           
           </ul>
