@@ -25,9 +25,9 @@ function NavbarOne() {
 
           </Nav>
           <Nav>
-            <Nav.Link href="#about" id="nav-link1">About Us</Nav.Link>
-            <Nav.Link href="#service" id="nav-link2">Servicio</Nav.Link>
-            <Nav.Link href="#team" id="nav-link3">Team</Nav.Link>
+            <Nav.Link href="#about" id="nav-link1">{t("about_us")}</Nav.Link>
+            <Nav.Link href="#service" id="nav-link2">{t("take_service")}</Nav.Link>
+            <Nav.Link href="#team" id="nav-link3">{t("take_payment")}</Nav.Link>
 
             <a id="btn-quote" className="theme-btn style-three bg-white" onClick={() => sideBarToggle()}>
               {t("get_quote")}<i className="fas fa-angle-double-right" />
@@ -41,4 +41,4 @@ function NavbarOne() {
   );
 }
 
-export default NavbarOne;
+export default NavbarOne;      

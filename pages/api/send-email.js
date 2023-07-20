@@ -1,30 +1,39 @@
 import nodemailer from 'nodemailer';
 
-const emailUser="example@gmail.ru"
-const emailPass="password123"
-const emailDestination="example@gmail.ru"
+const gmailuser="aymartel@gmail.com"
+const gmailToken="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"
 
 export default async (req, res) => {
   if (req.method === 'POST') {
-    const { name, message } = req.body;
+    const {  name, email, number, message } = req.body;
 
     // Configurar el transporte
-    const transporter = nodemailer.createTransport({
-      host: 'smtp.yandex.com',
+    // const transporter = nodemailer.createTransport({
+    //   host: 'smtp.yandex.com',
+    //   port: 465,
+    //   secure: true,
+    //   auth: {
+    //     user: emailUser,
+    //     pass: emailPass
+    //   }
+    // });
+
+    let transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
       port: 465,
       secure: true,
       auth: {
-        user: emailUser,
-        pass: emailPass
-      }
+        type: "OAuth2",
+        user: gmailuser,
+        accessToken: gmailToken,
+      },
     });
-
     // Configurar el correo electrónico
     const mailOptions = {
-      from: emailUser,
-      to: emailDestination,
+      from: gmailuser,
+      to: email,
       subject: `Nuevo mensaje de ${name}`,
-      html: mailTemplate(name, message),
+      html: mailTemplate( name, number, message),
     };
 
     // Enviar el correo electrónico
@@ -42,24 +51,25 @@ export default async (req, res) => {
   }
 };
 
-const mailTemplate = (name, message) => `
+const mailTemplate = (name,  number, message ) => `
   <html>
     <head>
       <style>
         body {
-          background-color: black;
+          background-color: #422B7C;
           color: white;
           font-family: sans-serif;
           padding: 20px;
         }
 
         h1 {
-          color: orange;
+          color: #EBA900;
         }
       </style>
     </head>
     <body>
       <h1>Nuevo mensaje de ${name}</h1>
+      <h2>Phone: ${number}</h2>
       <p>${message}</p>
     </body>
   </html>
