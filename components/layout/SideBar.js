@@ -1,7 +1,29 @@
-import axios from "axios";
-import { Fragment, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import { sideBarToggle, useForm } from "../../utils/utils";
+import emailjs from '@emailjs/browser';
+
 const SideBar = ({ tsendmessage, tname, temailaddress, tphonenumber, twritemessage, tsave, tsending, tsended }) => {
+ 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setloading(true)
+    setsended(false)
+    emailjs.sendForm('service_p2fa4l6', 'template_byunur9', form.current, 'kryEfXk-3H4o3RxFL')
+      .then((result) => {
+          console.log(result.text);
+          reset();
+          setsended(true)
+      }, (error) => {
+          console.log(error.text);
+          reset();
+          setsended(false)
+      });
+      setloading(false);
+  };
+  
+  
   const initialForm = {
     name: '',
     email: '',
@@ -13,30 +35,6 @@ const SideBar = ({ tsendmessage, tname, temailaddress, tphonenumber, twritemessa
   const [loading, setloading] = useState(false);
   const [sended, setsended] = useState(false);
 
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    setloading(true)
-    setsended(false)
-    try {
-
-      await axios.post('/api/send-email', JSON.stringify({ name, email, number, message }), {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
-        .then(function (response) {
-          console.log(response);
-          setsended(true)
-        })
-
-    } catch (error) {
-      console.error(error);
-      setsended(false)
-    }
-    reset();
-    setloading(false);
-  };
 
   return (
     <Fragment>
@@ -53,7 +51,7 @@ const SideBar = ({ tsendmessage, tname, temailaddress, tphonenumber, twritemessa
           </div>
           {/*Appointment Form*/}
           <div className="appointment-form">
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                 <input
                   type="text"

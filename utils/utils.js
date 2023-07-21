@@ -8,7 +8,6 @@ export const stickyNav = () => {
   const navlink1 = document.getElementById("nav-link1");
   const navlink2 = document.getElementById("nav-link2");
   const navlink3 = document.getElementById("nav-link3");
-  console.log(offset)
       if (offset > 129) {
         floatButton.classList.remove("btVisible");
         nav.classList.remove("navtop");
