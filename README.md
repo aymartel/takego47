@@ -7,6 +7,7 @@ https://takego47.vercel.app/
 This project is a website for a delivery agency that I created using Figma for UI/UX design and NextJS, JavaScript, and Adobe Creative Suite for branding. In this project, I integrated creative design with advanced functionalities to offer a unique experience to users.
 
 ### Technologies used:
+- Figma
 - NextJS
 - JavaScript
 - Adobe Creative Suite
