@@ -1,4 +1,6 @@
+### Figma:
 https://www.figma.com/design/82g1Ps4gcFJnUSm1OMPEmJ/TG?node-id=0-1&t=UGRlx57d9SliYIc3-1
+### Web:
 https://takego47.vercel.app/
 ## Delivery Company - NextJS
 
